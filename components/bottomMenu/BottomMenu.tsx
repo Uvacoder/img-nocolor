@@ -7,7 +7,7 @@ import { loginLinks } from './loginLinks';
 
 import { bottomMenuTypes } from './bottomMenuTypes';
 
-const BottomMenu: FC<bottomMenuTypes> = ({ user }) => {
+const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
   const router = useRouter();
 
   return (
@@ -24,7 +24,12 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user }) => {
 
                 </div>
                 <div className='hidden group-hover:flex absolute flex justify-center right-1/2 translate-x-1/2 bottom-1/2 -translate-y-1/2 w-screen h-20 items-center bg-white dark:bg-black cursor-pointer'>
-                  <div className='hover:scale-105 hover: ease-in-out hover:transition'>login to use</div>
+                  <div
+                    onClick={handleClick}
+                    className='hover:scale-105 hover: ease-in-out hover:transition'
+                  >
+                    login to use
+                  </div>
                 </div>
               </>
             ))}
@@ -51,8 +56,16 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user }) => {
 
                   <div className={` ${item.href === '/account' && 'group-hover:flex'} hidden absolute h-20 justify-center items-center right-1/2 translate-x-1/2 bottom-1/2 -translate-y-1/2 pr-52 lg:pr-0 w-[100rem] lg:w-[1000rem]  bg-white dark:bg-black cursor-pointer gap-12`}>
                     {loginLinks.map((item) => (
-                      <Link href={item.href} className='hover:scale-105 hover: ease-in-out hover:transition'>
-                        <a href={item.href}>{item.link}</a>
+                      <Link
+                        href={item.href}
+                        className='hover:scale-105 hover: ease-in-out hover:transition'
+                      >
+                        <a
+                          onClick={item.link === 'log out' && handleClick}
+                          href={item.href}
+                        >
+                          {item.link}
+                        </a>
                       </Link>
                     ))}
                   </div>
