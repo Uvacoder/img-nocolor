@@ -75,8 +75,4 @@ export const feedSectionData = [
     id: 3,
     url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521150/bw16_y2w7ce.jpg'
   },
-  {
-    id: 4,
-    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521150/bw4_jgu1bb.jpg'
-  },
 ];
