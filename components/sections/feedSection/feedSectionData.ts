@@ -75,4 +75,36 @@ export const feedSectionData = [
     id: 3,
     url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521150/bw16_y2w7ce.jpg'
   },
+  {
+    id: 12,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521144/bw12_engyb2.jpg'
+  },
+  {
+    id: 13,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658523236/bw13_wl7p2n.jpg'
+  },
+  {
+    id: 14,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521147/bw7_mnrsgj.jpg'
+  },
+  {
+    id: 15,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658523275/bw15_j4yzvy.jpg'
+  },
+  {
+    id: 16,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521147/bw3_kmgrea.jpg'
+  },
+  {
+    id: 1,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521144/bw11_eqfzfx.jpg'
+  },
+  {
+    id: 2,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521149/bw2_fyr8ww.jpg'
+  },
+  {
+    id: 3,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521150/bw16_y2w7ce.jpg'
+  },
 ];
