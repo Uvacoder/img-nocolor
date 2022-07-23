@@ -14,7 +14,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
     <footer>
       {!user ? (
         <section className='group flex fixed h-20 w-screen justify-around items-center bottom-0 bg-white/70 dark:bg-black/70'>
-          <div className='relative flex h-fit gap-4 sm:gap-14 dark:text-white'>
+          <div className='relative flex h-fit gap-6 xs:gap-12 sm:gap-16 dark:text-white'>
             {bottomMenuLinks.map((item) => (
               <>
                 <div
@@ -37,7 +37,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
         </section>
       ) : (
         <section className='flex fixed h-20 w-screen justify-around bottom-0 bg-white/70 dark:bg-black/70'>
-          <div className='flex items-center gap-4 sm:gap-14 dark:text-white'>
+          <div className='flex items-center gap-6  xs:gap-12 sm:gap-16 dark:text-white'>
             {bottomMenuLinks.map((item) => (
               <>
                 <div className='relative group py-8'>
@@ -54,7 +54,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
                     </Link>
                   )}
 
-                  <div className={` ${item.href === '/account' && 'group-hover:flex'} hidden absolute h-20 justify-center items-center right-1/2 translate-x-1/2 bottom-1/2 -translate-y-1/2 pr-52 lg:pr-0 w-[100rem] lg:w-[1000rem]  bg-white dark:bg-black cursor-pointer gap-12`}>
+                  <div className={` ${item.href === '/account' && 'group-hover:flex'} hidden absolute h-20 justify-center items-center right-1/2 translate-x-1/2 bottom-1/2 -translate-y-1/2 pr-52 md:pr-0 w-[100rem] lg:w-[1000rem] bg-white dark:bg-black cursor-pointer gap-8`}>
                     {loginLinks.map((item) => (
                       <Link
                         href={item.href}
