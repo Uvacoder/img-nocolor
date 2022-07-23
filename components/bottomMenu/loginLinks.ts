@@ -1,7 +1,7 @@
 export const loginLinks = [
   {
-    link: 'settings',
-    href: '/settings'
+    link: 'account',
+    href: '/account'
   },
   {
     link: 'statistics',

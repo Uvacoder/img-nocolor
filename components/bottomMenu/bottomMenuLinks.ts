@@ -1,4 +1,4 @@
-export const footerLinks = [
+export const bottomMenuLinks = [
   {
     link: 'feed',
     href: '/'
