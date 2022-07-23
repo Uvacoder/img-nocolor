@@ -24,7 +24,7 @@ const Footer: FC<footerTypes> = ({ user }) => {
 
                 </div>
                 <div className='hidden group-hover:flex absolute flex justify-center right-1/2 translate-x-1/2 bottom-1/2 -translate-y-1/2 w-screen h-20 items-center bg-white dark:bg-black cursor-pointer'>
-                  <div className='hover:scale-105 hover: ease-in-out hover:transition'>Login to use</div>
+                  <div className='hover:scale-105 hover: ease-in-out hover:transition'>login to use</div>
                 </div>
               </>
             ))}
