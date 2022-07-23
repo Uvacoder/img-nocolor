@@ -7,7 +7,7 @@ import LoginOverlay from '../components/overlays/LoginOverlay';
 import Footer from '../components/footer/Footer';
 
 const Home: NextPage = () => {
-  const user = false;
+  const user = true;
   return (
     <div>
       <Head>
