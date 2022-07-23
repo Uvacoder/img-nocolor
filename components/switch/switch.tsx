@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 
@@ -6,6 +6,10 @@ const Switch = () => {
   const [isOn, setIsOn] = useState(false);
   const toggleSwitch = () => setIsOn(!isOn);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => () => {
+    setTheme('dark');
+  }, []);
 
   const spring = {
     type: 'spring',
