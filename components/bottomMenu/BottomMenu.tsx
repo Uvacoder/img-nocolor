@@ -2,12 +2,12 @@ import { FC, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { footerLinks } from './footerLinks';
+import { bottomMenuLinks } from './bottomMenuLinks';
 import { loginLinks } from './loginLinks';
 
-import { footerTypes } from './footerTypes';
+import { bottomMenuTypes } from './bottomMenuTypes';
 
-const Footer: FC<footerTypes> = ({ user }) => {
+const BottomMenu: FC<bottomMenuTypes> = ({ user }) => {
   const router = useRouter();
 
   return (
@@ -15,7 +15,7 @@ const Footer: FC<footerTypes> = ({ user }) => {
       {!user ? (
         <section className='group flex fixed h-20 w-screen justify-around items-center bottom-0 bg-white/70 dark:bg-black/70'>
           <div className='relative flex h-fit gap-4 sm:gap-14 dark:text-white'>
-            {footerLinks.map((item) => (
+            {bottomMenuLinks.map((item) => (
               <>
                 <div
                   className={router.pathname === item.href ? 'underline underline-offset-4 cursor-default' : 'cursor-default'}
@@ -33,7 +33,7 @@ const Footer: FC<footerTypes> = ({ user }) => {
       ) : (
         <section className='flex fixed h-20 w-screen justify-around bottom-0 bg-white/70 dark:bg-black/70'>
           <div className='flex items-center gap-4 sm:gap-14 dark:text-white'>
-            {footerLinks.map((item) => (
+            {bottomMenuLinks.map((item) => (
               <>
                 <div className='relative group py-8'>
                   {item.href === '/account' ? (
@@ -62,9 +62,8 @@ const Footer: FC<footerTypes> = ({ user }) => {
           </div>
         </section>
       )}
-      )
     </footer>
   );
 };
 
-export default Footer;
+export default BottomMenu;

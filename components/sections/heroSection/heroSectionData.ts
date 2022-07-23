@@ -63,4 +63,20 @@ export const heroSectionData = [
     id: 16,
     url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521147/bw3_kmgrea.jpg'
   },
+  {
+    id: 17,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521147/bw7_mnrsgj.jpg'
+  },
+  {
+    id: 18,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658522779/bw6_un6zxr.jpg'
+  },
+  {
+    id: 19,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521145/bw14_xh1gc2.jpg'
+  },
+  {
+    id: 20,
+    url: 'https://res.cloudinary.com/dznarb2eu/image/upload/w_500,h_500/v1658521145/bw8_rffmzn.jpg'
+  },
 ];

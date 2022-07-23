@@ -1,10 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import Header from '../components/header/header';
+import Navigation from '../components/navigation/Navigation';
 import HeroSection from '../components/sections/heroSection/HeroSection';
+import FeedSection from '../components/sections/feedSection/FeedSection';
 import LoginOverlay from '../components/overlays/LoginOverlay';
-import Footer from '../components/footer/Footer';
+import BottomMenu from '../components/bottomMenu/BottomMenu';
 
 const Home: NextPage = () => {
   const user = false;
@@ -16,10 +17,16 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={`${!user ? 'h-screen overflow-hidden ' : ''}text-black dark:text-white`}>
-        <Header />
-        {!user && <LoginOverlay />}
-        <HeroSection />
-        <Footer user={user} />
+        <Navigation />
+        {!user
+          ? (
+            <>
+              <LoginOverlay />
+              <HeroSection />
+            </>
+          )
+          : <FeedSection />}
+        <BottomMenu user={user} />
       </main>
     </div>
   );

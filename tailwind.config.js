@@ -9,6 +9,13 @@ module.exports = {
     typography: (theme) => ({}),
     extend: {
     },
+    screens: {
+      xs: '420px',
+      sm: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      xxl: '1536px'
+    },
   },
   variants: {
     extend: {
