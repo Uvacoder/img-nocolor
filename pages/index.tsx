@@ -1,18 +1,19 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useState, useContext } from 'react';
 
-import { useState } from 'react';
 import Navigation from '../components/navigation/Navigation';
 import HeroSection from '../components/sections/heroSection/HeroSection';
 import FeedSection from '../components/sections/feedSection/FeedSection';
 import LoginOverlay from '../components/overlays/LoginOverlay';
 import BottomMenu from '../components/bottomMenu/BottomMenu';
 
-const Home: NextPage = () => {
-  const [user, setUser] = useState(false);
-  const handleClick = () => {
-    setUser(!user);
-  };
+import { useUserContext } from '../contexts';
+
+const Home: NextPage = (props) => {
+  const { user, setUser } = useUserContext();
+  const handleClick = () => setUser(!user);
+
   return (
     <div className='dark:bg-black'>
       <Head>

@@ -16,7 +16,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
         <section className='group flex fixed h-20 w-screen justify-around items-center bottom-0 bg-white/70 dark:bg-black/70'>
           <div className='relative flex h-fit gap-6 xs:gap-12 sm:gap-16 dark:text-white'>
             {bottomMenuLinks.map((item) => (
-              <>
+              <div key={item.id}>
                 <div
                   className={router.pathname === item.href ? 'underline underline-offset-4 cursor-default' : 'cursor-default'}
                 >
@@ -31,7 +31,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
                     login to use
                   </div>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </section>
@@ -39,15 +39,19 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
         <section className='flex fixed h-20 w-screen justify-around bottom-0 bg-white/70 dark:bg-black/70'>
           <div className='flex items-center gap-6  xs:gap-12 sm:gap-16 dark:text-white'>
             {bottomMenuLinks.map((item) => (
-              <>
-                <div className='relative group py-8'>
+              <div key={item.id}>
+                <div
+                  className='relative group py-8'
+                >
                   {item.href === '/account' ? (
                     <div className={`${router.pathname === item.href && 'underline underline-offset-4'} cursor-default`}>
                       {item.link}
                     </div>
 
                   ) : (
-                    <Link href={item.href}>
+                    <Link
+                      href={item.href}
+                    >
                       <a href={item.href} className={`${router.pathname === item.href && 'underline underline-offset-4'}`}>
                         {item.link}
                       </a>
@@ -57,6 +61,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
                   <div className={` ${item.href === '/account' && 'group-hover:flex'} hidden absolute h-20 justify-center items-center right-1/2 translate-x-1/2 bottom-1/2 -translate-y-1/2 pr-52 md:pr-0 w-[100rem] lg:w-[1000rem] bg-white dark:bg-black cursor-pointer gap-8`}>
                     {loginLinks.map((item) => (
                       <Link
+                        key={item.id}
                         href={item.href}
                         className='hover:scale-105 hover: ease-in-out hover:transition'
                       >
@@ -70,7 +75,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
                     ))}
                   </div>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </section>

@@ -18,7 +18,7 @@ const Switch = () => {
   };
 
   return (
-    <div className={`flex ${isOn ? 'justify-start' : 'justify-end'} items-center p-1 rounded-full cursor-pointer w-8 h-6 bg-black dark:bg-white`} data-isOn={isOn} onClick={() => { toggleSwitch(); setTheme(theme === 'dark' ? 'light' : 'dark'); }}>
+    <div className={`flex ${isOn ? 'justify-start' : 'justify-end'} items-center p-1 rounded-full cursor-pointer w-8 h-6 bg-black dark:bg-white`} onClick={() => { toggleSwitch(); setTheme(theme === 'dark' ? 'light' : 'dark'); }}>
       <motion.div className='w-4 h-4 rounded-full bg-white dark:bg-black' layout transition={spring} />
     </div>
   );

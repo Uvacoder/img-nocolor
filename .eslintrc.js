@@ -34,6 +34,7 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     'import/prefer-default-export': 'off',
     'consistent-return': 'off',
+    'eact/destructuring-assignment': 'off',
     'no-undef': 'off',
     'no-unused-vars': 'off',
     'global-require': 'off',
