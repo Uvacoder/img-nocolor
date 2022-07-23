@@ -36,11 +36,19 @@ const Footer: FC<footerTypes> = ({ user }) => {
             {footerLinks.map((item) => (
               <>
                 <div className='relative group py-8'>
-                  <Link href={item.href}>
-                    <a href={item.href} className={`${router.pathname === item.href && 'underline underline-offset-4'}`}>
+                  {item.href === '/account' ? (
+                    <div className={`${router.pathname === item.href && 'underline underline-offset-4'} cursor-default`}>
                       {item.link}
-                    </a>
-                  </Link>
+                    </div>
+
+                  ) : (
+                    <Link href={item.href}>
+                      <a href={item.href} className={`${router.pathname === item.href && 'underline underline-offset-4'}`}>
+                        {item.link}
+                      </a>
+                    </Link>
+                  )}
+
                   <div className={` ${item.href === '/account' && 'group-hover:flex'} hidden absolute h-20 justify-center items-center right-1/2 translate-x-1/2 bottom-1/2 -translate-y-1/2 pr-52 lg:pr-0 w-[100rem] lg:w-[1000rem]  bg-white dark:bg-black cursor-pointer gap-12`}>
                     {loginLinks.map((item) => (
                       <Link href={item.href} className='hover:scale-105 hover: ease-in-out hover:transition'>
