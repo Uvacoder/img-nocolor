@@ -44,6 +44,7 @@ module.exports = {
     camelcase: 'off',
     'jsx-a11y/label-has-associated-control': 'off',
     'default-case': 'off',
+    'react/jsx-no-useless-fragment': 'off',
     'no-use-before-define': 'off',
     'comma-dangle': 'off',
     'no-shadow': 'off',

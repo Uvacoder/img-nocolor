@@ -1,17 +1,22 @@
 export const footerLinks = [
   {
-    link: 'feed'
+    link: 'feed',
+    href: '/'
   },
   {
-    link: 'discover'
+    link: 'discover',
+    href: '/discover'
   },
   {
-    link: 'upload'
+    link: 'upload',
+    href: '/upload'
   },
   {
-    link: 'likes'
+    link: 'likes',
+    href: '/likes'
   },
   {
-    link: 'account'
+    link: 'account',
+    href: '/account'
   },
 ];
