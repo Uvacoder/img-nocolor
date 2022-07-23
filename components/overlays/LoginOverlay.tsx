@@ -2,8 +2,8 @@ import { FC } from 'react';
 
 const LoginOverlay: FC = () => (
   <div className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center z-30'>
-    <div className='bg-white/70 dark:bg-black/70 p-4 rounded-xl'>
-      <h1 className='text-3xl mb-4 cursor-pointer hover:scale-105 hover:ease-in-out hover:transition'>
+    <div className='bg-white/70 dark:bg-black/70 p-6 '>
+      <h1 className='text-2xl mb-4 cursor-pointer hover:scale-105 hover:ease-in-out hover:transition'>
         Login to use
       </h1>
       <h3 className='mb-1'>Don't have a account?</h3>
