@@ -1,6 +1,6 @@
 export type feedTypes = {
-    item: {
+    data: {
         url: string,
         id: number
-    }
+    }[]
 }

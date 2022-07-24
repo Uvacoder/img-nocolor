@@ -23,7 +23,8 @@ const MyApp = ({
     if (!user) {
       router.push('/');
     }
-  }, []); return (
+  }, []);
+  return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider attribute='class'>
         <UserContextProvider>

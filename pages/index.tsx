@@ -2,12 +2,14 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Navigation from '../components/navigation/Navigation';
-import HeroSection from '../components/sections/heroSection/HeroSection';
-import FeedSection from '../components/sections/feedSection/FeedSection';
+import Feed from '../components/feed/Feed';
 import LoginOverlay from '../components/overlays/loginOverlay/LoginOverlay';
-import BottomMenu from '../components/bottomMenu/BottomMenu';
+import BottomMenu from '../components/menu/BottomMenu';
 
 import { useUserContext } from '../contexts';
+
+import { feedSectionData } from '../public/data/feedSectionData';
+import { heroSectionData } from '../public/data/heroSectionData';
 
 const Home: NextPage = () => {
   const { user, setUser } = useUserContext();
@@ -26,10 +28,10 @@ const Home: NextPage = () => {
           ? (
             <>
               <LoginOverlay handleClick={handleClick} />
-              <HeroSection />
+              <Feed data={heroSectionData} />
             </>
           )
-          : <FeedSection />}
+          : <Feed data={feedSectionData} />}
         <BottomMenu user={user} handleClick={handleClick} />
       </main>
     </div>
