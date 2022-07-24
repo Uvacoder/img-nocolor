@@ -36,6 +36,7 @@ module.exports = {
     'consistent-return': 'off',
     'eact/destructuring-assignment': 'off',
     'no-undef': 'off',
+    'react/jsx-no-constructed-context-values': 'off',
     'no-unused-vars': 'off',
     'global-require': 'off',
     'prefer-destructuring': 'off',

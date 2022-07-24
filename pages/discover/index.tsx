@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import Navigation from '../../components/navigation/Navigation';
 import FeedSection from '../../components/sections/feedSection/FeedSection';
 import BottomMenu from '../../components/bottomMenu/BottomMenu';
@@ -11,6 +12,14 @@ import { useUserContext } from '../../contexts';
 const Home: NextPage = () => {
   const { user, setUser } = useUserContext();
   const handleClick = () => setUser(!user);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!user) {
+      router.push('/');
+    }
+  }, []);
 
   return (
     <div className='dark:bg-black'>
