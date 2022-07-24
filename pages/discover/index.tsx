@@ -1,8 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import Navigation from '../../components/navigation/Navigation';
 import FeedSection from '../../components/sections/feedSection/FeedSection';
 import BottomMenu from '../../components/bottomMenu/BottomMenu';
