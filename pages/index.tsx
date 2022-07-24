@@ -4,12 +4,12 @@ import Head from 'next/head';
 import Navigation from '../components/navigation/Navigation';
 import HeroSection from '../components/sections/heroSection/HeroSection';
 import FeedSection from '../components/sections/feedSection/FeedSection';
-import LoginOverlay from '../components/overlays/LoginOverlay';
+import LoginOverlay from '../components/overlays/loginOverlay/LoginOverlay';
 import BottomMenu from '../components/bottomMenu/BottomMenu';
 
 import { useUserContext } from '../contexts';
 
-const Home: NextPage = (props) => {
+const Home: NextPage = () => {
   const { user, setUser } = useUserContext();
   const handleClick = () => setUser(!user);
 

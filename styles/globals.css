@@ -12,6 +12,10 @@ body {
   scrollbar-width: none;
 }
 
+input:focus {
+  outline: none;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
