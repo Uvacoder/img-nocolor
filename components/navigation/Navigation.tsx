@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 import Switch from '../switch/switch';
 

@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Navigation from '../../components/navigation/Navigation';
-import FeedSection from '../../components/sections/feedSection/FeedSection';
+import DiscoverSection from '../../components/sections/discoverSection/DiscoverSection';
 import BottomMenu from '../../components/bottomMenu/BottomMenu';
 
 import { useUserContext } from '../../contexts';
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <main className={`${!user && 'h-screen overflow-hidden'}text-black dark:text-white`}>
         <Navigation />
-        <FeedSection />
+        <DiscoverSection />
         <BottomMenu user={user} handleClick={handleClick} />
       </main>
     </div>
