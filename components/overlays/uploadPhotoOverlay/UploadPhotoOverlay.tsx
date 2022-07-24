@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
 const UploadPhotoOverlay: FC = () => (
-  <div className='absolute w-4/5 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center'>
-    <div className='p-6 bg-white/70 dark:bg-black/70 rounded-md'>
+  <div className='absolute w-4/5 md:w-fit top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center z-30'>
+    <div className='bg-white/70 dark:bg-black/70 p-6 rounded-md'>
       <form>
         <h1 className='text-2xl mb-6 cursor-pointer'>
           upload photo
@@ -15,7 +15,7 @@ const UploadPhotoOverlay: FC = () => (
           </div>
           <div className='flex flex-col items-center gap-1'>
             <label>description</label>
-            <input type='text' className='w-full w-4/5 p-2 bg-white/50 dark:bg-white/10 text-sm rounded-md placeholder:text-black/70 dark:placeholder:text-white/70' placeholder='description #hashtag #hashtag2' />
+            <input type='text' className='w-4/5 p-2 bg-white/50 dark:bg-white/10 text-sm rounded-md placeholder:text-black/70 dark:placeholder:text-white/70' placeholder='description #hashtag #hashtag2' />
             <span className='text-xs md:w-4/5 opacity-70'>if you want to use hashtags separate them by space</span>
           </div>
           <button type='submit' className='p-4 bg-white/50 dark:bg-white/10 rounded-md'>upload</button>
