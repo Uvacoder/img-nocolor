@@ -10,8 +10,8 @@ const UploadPhotoOverlay: FC = () => (
         <div className='flex flex-col gap-6'>
           <div className='flex flex-col items-center gap-1'>
             <label>choose photo</label>
-            <input type='file' name='file' accept='.jpg,.png' className='block md:w-4/5 p-2 text-sm text-black/70 dark:text-white/70 rounded-lg cursor-pointer bg-white/50 dark:bg-white/10 placeholder:text-black/70 dark:placeholder:text-white/70 file:border-0 file:rounded-sm file:text-black/80 dark:file:bg-white/10 dark:file:text-white/80 file:hover:cursor-pointer' />
-            <span className='text-xs mx-4 md:w-4/5 opacity-70'>please use square and b&w photos otherwise we will convert them</span>
+            <input type='file' name='file' accept='.jpg,.png' className='block md:w-4/5 p-2 text-sm text-black/70 dark:text-white/70 rounded-md cursor-pointer bg-white/50 dark:bg-white/10 placeholder:text-black/70 dark:placeholder:text-white/70 file:border-0 file:rounded-md file:text-black/80 dark:file:bg-white/10 dark:file:text-white/80 file:hover:cursor-pointer' />
+            <span className='text-xs mx-4 md:w-4/5 opacity-70 break-normal'>please use square and b&w photos otherwise we will convert them</span>
           </div>
           <div className='flex flex-col items-center gap-1'>
             <label>description</label>
