@@ -13,14 +13,6 @@ const Home: NextPage = () => {
   const { user, setUser } = useUserContext();
   const handleClick = () => setUser(!user);
 
-  const router = useRouter();
-
-  useEffect(() => {
-    if (!user) {
-      router.push('/');
-    }
-  }, []);
-
   return (
     <div className='dark:bg-black'>
       <Head>
