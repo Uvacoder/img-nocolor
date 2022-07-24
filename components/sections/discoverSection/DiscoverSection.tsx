@@ -1,11 +1,12 @@
 import { FC } from 'react';
 
-import { heroSectionData } from './heroSectionData';
 import Feed from '../../feed/Feed';
 
-const HeroSection: FC = () => (
+import { discoverSectionData } from './discoverSectionData';
+
+const DiscoverSection: FC = () => (
   <div className='flex flex-3 flex-wrap align-center justify-center dark:bg-black gap-2'>
-    {heroSectionData.map((item) => (
+    {discoverSectionData.map((item) => (
       <Feed
         key={item.id}
         item={item}
@@ -14,4 +15,4 @@ const HeroSection: FC = () => (
   </div>
 );
 
-export default HeroSection;
+export default DiscoverSection;
