@@ -2,8 +2,8 @@ import { FC, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { bottomMenuLinks } from './bottomMenuLinks';
-import { loginLinks } from './loginLinks';
+import { bottomMenuLinks } from '../../public/data/bottomMenuLinks';
+import { loginLinks } from '../../public/data/loginLinks';
 
 import { bottomMenuTypes } from './bottomMenuTypes';
 
