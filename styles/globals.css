@@ -12,7 +12,7 @@ body {
   scrollbar-width: none;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: none;
 }
 
