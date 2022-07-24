@@ -1,15 +1,12 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
+
+import { useUserContext } from '../../contexts';
 
 const Switch = () => {
   const [isOn, setIsOn] = useState(false);
   const toggleSwitch = () => setIsOn(!isOn);
-  const { theme, setTheme } = useTheme();
-
-  useEffect(() => () => {
-    setTheme('dark');
-  }, []);
+  const { theme, setTheme } = useUserContext();
 
   const spring = {
     type: 'spring',

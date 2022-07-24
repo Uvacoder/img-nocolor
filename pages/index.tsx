@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { useState, useContext } from 'react';
 
 import Navigation from '../components/navigation/Navigation';
 import HeroSection from '../components/sections/heroSection/HeroSection';
