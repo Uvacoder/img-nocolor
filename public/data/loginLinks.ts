@@ -1,8 +1,8 @@
 export const loginLinks = [
   {
     id: 1,
-    link: 'account',
-    href: '/account'
+    link: 'profile',
+    href: '/profile'
   },
   {
     id: 2,

@@ -6,6 +6,7 @@ import { bottomMenuLinks } from '../../public/data/bottomMenuLinks';
 import { loginLinks } from '../../public/data/loginLinks';
 
 import { bottomMenuTypes } from './bottomMenuTypes';
+import LikesModal from '../modal/LikesModal';
 
 const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
   const router = useRouter();
@@ -44,7 +45,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
                   className='relative group py-8'
                 >
                   {item.href === '/account' || item.href === '/likes' ? (
-                    <div className={`${router.pathname === item.href && 'underline underline-offset-4'} cursor-default`}>
+                    <div className={`${router.pathname === item.href && 'underline underline-offset-4'} cursor-pointer`}>
                       {item.link}
                     </div>
 
@@ -74,20 +75,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
                     ))}
                   </div>
                   {item.href === '/likes' && (
-                  <div className='group-hover:flex hidden absolute h-80 w-80 justify-center rounded-md right-1/2 translate-x-1/2 bottom-1/2 mr-8 sm:mr-0 bg-white/90 dark:bg-black/90 mb-10 gap-8'>
-                    <div className='flex flex-col px-8 py-4 gap-4 text-md text-left overflow-scroll'>
-                      <p>user @Lukas likes your photo</p>
-                      <p>user @Petr started following you</p>
-                      <p>user @Honza likes your photo</p>
-                      <p>user @Misa likes your photo</p>
-                      <p>user @Dan started following you</p>
-                      <p>user @Zuzka likes your photo</p>
-                      <p>user @Tereza likes your photo</p>
-                      <p>user @Petra started following you</p>
-                      <p>user @Vojta likes your photo</p>
-                      <p>user @Matej likes your photo</p>
-                    </div>
-                  </div>
+                    <LikesModal />
                   )}
                 </div>
               </div>
