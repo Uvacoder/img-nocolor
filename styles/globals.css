@@ -8,16 +8,21 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+div {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar, div::-webkit-scrollbar {
+  display: none; /* chrome */
 }
 
 input:focus, textarea:focus {
   outline: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 a {
