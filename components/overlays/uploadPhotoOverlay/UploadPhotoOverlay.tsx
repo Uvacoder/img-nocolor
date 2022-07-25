@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 const UploadPhotoOverlay: FC = () => (
   <div className='absolute w-4/5 sm:w-fit top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center'>
-    <div className='bg-white/70 dark:bg-black/70 p-6 rounded-md'>
+    <div className='bg-white/90 dark:bg-black/90 p-6 rounded-md'>
       <form>
         <h1 className='text-2xl mb-6 cursor-pointer'>
           upload photo
