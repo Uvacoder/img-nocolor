@@ -8,7 +8,7 @@ import { useUserContext } from '../../contexts';
 import UploadPhotoOverlay from '../../components/overlays/uploadPhotoOverlay/UploadPhotoOverlay';
 import Feed from '../../components/feed/Feed';
 
-import { heroSectionData } from '../../public/data/heroSectionData';
+import { discoverSectionData } from '../../public/data/discoverSectionData';
 
 const UploadPage: NextPage = () => {
   const { user, setUser } = useUserContext();
@@ -23,7 +23,7 @@ const UploadPage: NextPage = () => {
       </Head>
       <main className='h-screen overflow-hidden text-black dark:text-white'>
         <Navigation />
-        <Feed data={heroSectionData} />
+        <Feed data={discoverSectionData} />
         <UploadPhotoOverlay />
         <BottomMenu user={user} handleClick={handleClick} />
       </main>
