@@ -14,7 +14,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
   return (
     <footer>
       {!user ? (
-        <section className='group flex fixed h-20 w-screen justify-around items-center bottom-0 bg-white/90 dark:bg-black/90'>
+        <section className='group flex fixed h-20 w-full justify-around items-center bottom-0 bg-white/90 dark:bg-black/90'>
           <div className='relative flex h-fit gap-6 xs:gap-12 sm:gap-16 dark:text-white'>
             {bottomMenuLinks.map((item) => (
               <div key={item.id}>
@@ -37,7 +37,7 @@ const BottomMenu: FC<bottomMenuTypes> = ({ user, handleClick }) => {
           </div>
         </section>
       ) : (
-        <section className='flex fixed h-20 w-screen justify-around bottom-0 bg-white/90 dark:bg-black/90'>
+        <section className='flex fixed h-20 w-full justify-around bottom-0 bg-white/90 dark:bg-black/90'>
           <div className='flex items-center gap-6 xs:gap-12 sm:gap-16 dark:text-white'>
             {bottomMenuLinks.map((item) => (
               <div key={item.id}>
