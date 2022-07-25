@@ -8,6 +8,9 @@ module.exports = {
   theme: {
     typography: (theme) => ({}),
     extend: {
+      boxShadow: {
+        inset: 'inset 0 25px 50px -12px rgb(0 0 0 / 0.25)',
+      }
     },
     screens: {
       xs: '420px',
