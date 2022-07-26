@@ -21,7 +21,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar, div::-webkit-scrollbar {
   display: none; /* chrome */
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, div:focus, a:focus, button:focus {
   outline: none;
 }
 

@@ -6,11 +6,6 @@ export const loginLinks = [
   },
   {
     id: 2,
-    link: 'statistics',
-    href: '/statistics'
-  },
-  {
-    id: 3,
     link: 'log out',
     href: '/'
   },
