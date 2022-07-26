@@ -8,8 +8,8 @@ const Profile = () => (
     </div>
     <h3 className='text-sm text-black dark:text-white mb-4 cursor-pointer'>@lukyno</h3>
     <div className='flex gap-4'>
-      <button type='button' className='bg-black/10 dark:bg-white/10 p-4'>followers</button>
-      <button type='button' className='bg-black/10 dark:bg-white/10  p-4'>following</button>
+      <button type='button' className='w-26 bg-black/10 dark:bg-white/10 p-4'>followers</button>
+      <button type='button' className='w-26 bg-black/10 dark:bg-white/10 p-4'>following</button>
     </div>
   </div>
 );
